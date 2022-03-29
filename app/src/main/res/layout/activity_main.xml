@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_gradient">
+
+    <RelativeLayout
+        android:id="@+id/topo"
+        android:layout_width="match_parent"
+        android:layout_height="244dp">
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/menu"
+            android:background="@color/transparente"/>
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto_medium"
+            android:letterSpacing="0.13"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="197dp"
+            android:text="@string/welcome"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:fontFamily="@font/roboto_light"
+            android:layout_below="@id/menu"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="43dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/forms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/username"
+            android:textColor="@color/fontes"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/email"
+            android:textColor="@color/fontes"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/password"
+            android:textColor="@color/fontes"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:hint="@string/country"
+            android:textColor="@color/fontes"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_light"/>
+
+        <EditText
+            android:id="@+id/zipcode"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/password"
+            android:hint="@string/zip_code"
+            android:textColor="@color/fontes"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_light"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rodape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="22dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/sign_up"
+            android:textColor="@color/coral"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/allready"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
